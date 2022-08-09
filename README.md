@@ -2,7 +2,7 @@
 
 # HyperionDev Full Stack Web Development Bootcamp - Level 1 Task 15 - Capstone project 2 Online-store
 
-![Project Image](images/online-store-project.png)
+![Project Image](screenshots/online-store-project.png)
 
 > Online store shopping cart project.
 
