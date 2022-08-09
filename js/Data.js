@@ -1,0 +1,42 @@
+let shopItemsData = [
+  {
+    id: "wsze123",
+    name: "shirt-A",
+    price: 120,
+    was: 200,
+    description: "Lorem ipsum dolor sit amet.",
+    image: "images/item1.png",
+  },
+  {
+    id: "wsze124",
+    name: "shirt-B",
+    price: 120,
+    was: 200,
+    description: "Lorem ipsum dolor sit amet.",
+    image: "images/item2.png",
+  },
+  {
+    id: "wsze125",
+    name: "shirt-C",
+    price: 120,
+    was: 200,
+    description: "Lorem ipsum dolor sit amet.",
+    image: "images/item3.png",
+  },
+  {
+    id: "wsze126",
+    name: "shirt-D",
+    price: 120,
+    was: 200,
+    description: "Lorem ipsum dolor sit amet.",
+    image: "images/item4.png",
+  },
+  {
+    id: "wsze127",
+    name: "shirt-E",
+    price: 120,
+    was: 200,
+    description: "Lorem ipsum dolor sit amet.",
+    image: "images/item5.png",
+  },
+];

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP|XYZ homepage</title>
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- my custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- include jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <!-- Extra styling for elements using jquery -->
+  <style>
+    #subHeading {
+      position: relative !important;
+    }
+    #mainHeading {
+      position: relative !important;
+    }
+
+    .drop::before {
+      content: "";
+      display: inline-block;
+      border: 5px solid;
+      border-color: #000 transparent transparent;
+      top: 5px;
+      left: -3px;
+      position: relative;
+    }
+
+    .dropdown {
+      position: absolute;
+      background: #fff;
+      display: none;
+      padding: 5px;
+      width: 10%;
+      text-align: start;
+    }
+
+    .dropdown li a:hover {
+      background: #447ab38e;
+      color: #000;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar">
+      <span class="logo">SHOP|XYZ</span>
+      <!-- navbar menu -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#header" class="nav-link">home</a>
+        </li>
+        <li class="nav-item">
+          <a href="catalogue.html" class="nav-link">catalogue</a>
+        </li>
+        <li class="nav-item">
+          <a href="#featured" class="nav-link">featured</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="drop nav-link">Dropdown</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Option1</a></li>
+              <li><a href="#">Option2</a></li>
+              <li><a href="#">Option3</a></li>
+              <li><a href="#">Option4</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="aboutPage.html" class="nav-link">about us</a>
+        </li>
+        <li class="nav-item">
+          <a href="teamPage.html" class="nav-link">team</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="drop nav-link">Dropdown</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Option1</a></li>
+              <li><a href="#">Option2</a></li>
+              <li><a href="#">Option3</a></li>
+              <li><a href="#">Option4</a></li>
+              <li><a href="#">Option5</a></li>
+              <li><a href="#">Option6</a></li>
+              <li><a href="#">Option7</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!-- navbar icons -->
+      <div class="nav-icons">
+        <a href="cart.html" class="nav-btn">
+          <i class="bi bi-cart-check-fill"></i>
+          <span class="nav-btn-badge" id="cartAmount">0</span>
+        </a>
+        <button class="nav-btn">
+          <i class="bi bi-heart-fill"></i>
+          <span class="nav-btn-badge">0</span>
+        </button>
+        <button class="nav-btn">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="content">
+        <h1 id="mainHeading">shop|xyz</h1>
+        <h2>the best collections</h2>
+        <h1 id="subHeading">new arrivals</h1>
+        <a href="#" class="btn cta-btn" id="moveAround">shop now</a>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- brands -->
+    <div class="brands">
+      <div class="flex-box">
+        <a href="https://superbalist.com/women" target="_blank"
+          ><img src="images/01.png" alt="brand name"
+        /></a>
+        <a href="https://superbalist.com/women" target="_blank"
+          ><img src="images/02.jpg" alt="brand name"
+        /></a>
+        <a href="https://superbalist.com/women" target="_blank"
+          ><img src="images/01.png" alt="brand name"
+        /></a>
+        <a href="https://superbalist.com/women" target="_blank"
+          ><img src="images/02.jpg" alt="brand name"
+        /></a>
+        <a href="https://superbalist.com/women" target="_blank"
+          ><img src="images/01.png" alt="brand name"
+        /></a>
+      </div>
+    </div>
+    <!-- end of brands -->
+
+    <!-- intro section -->
+    <section class="intro" id="intro">
+      <h1 class="heading">Welcome to shop|xyz</h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/intro.png" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>What makes our store unique</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            error dolor, adipisci dicta, harum asperiores facere id, distinctio
+            autem nulla rerum corporis voluptate? Culpa illo veniam libero quas
+            ut. Amet!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            error dolor, adipisci dicta, harum asperiores facere id, distinctio
+            autem nulla rerum corporis voluptate? Culpa illo veniam libero quas
+            ut. Amet!
+          </p>
+          <a href="catalogue.html" class="btn cta-btn">shop now</a>
+        </div>
+      </div>
+    </section>
+    <!-- end of intro -->
+
+    <!-- featured section -->
+    <section class="featured" id="featured">
+      <!-- item 1 -->
+      <h1 class="heading">Featured Items</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/special_product_1.jpg" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+        <!-- item 2 -->
+        <div class="box">
+          <img src="images/special_product_2.jpg" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+        <!-- item 3 -->
+        <div class="box">
+          <img src="images/special_product_3.jpg" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+        <!-- item 4 -->
+        <div class="box">
+          <img src="images/special_product_4.jpg" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+    <!-- end of featured section -->
+
+    <!-- shop section -->
+    <section class="shop" id="shop">
+      <!-- item 1 -->
+      <h1 class="heading">shop</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/item1.png" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+        <!-- item 2 -->
+        <div class="box">
+          <img src="images/item2.png" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+        <!-- item 3 -->
+        <div class="box">
+          <img src="images/item3.png" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+        <!-- item 4 -->
+        <div class="box">
+          <img src="images/item4.png" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+        <!-- item 5 -->
+        <div class="box">
+          <img src="images/item5.png" alt="" />
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="price">R150.00<span>R200.00</span></div>
+          <a href="catalogue.html" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+    <!-- end of shop section -->
+
+    <!-- contact section -->
+    <section class="contact" id="contact" style="margin-top: 10rem">
+      <h1 class="heading">contact us</h1>
+      <div class="box-container">
+        <div class="box">
+          <form action="">
+            <input type="text" class="input-field" placeholder="Name" />
+            <input type="email" class="input-field" placeholder="Email" />
+            <input type="text" class="input-field" placeholder="Subject" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="input-field textarea-field"
+              placeholder="Your message"
+            ></textarea>
+            <button type="button" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end of contact section -->
+
+    <!-- testimonials section -->
+    <section class="testimonials">
+      <h1 class="heading">Testimonials</h1>
+      <div class="box-container">
+        <!-- item 1 -->
+        <div class="box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+            consectetur praesentium recusandae consequuntur magni nihil
+            doloribus ratione iusto molestiae reiciendis.
+          </p>
+          <img src="images/avatar-3.jpg" alt="testimonial" class="image" />
+          <h3>Jane Doe</h3>
+          <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class="box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+            consectetur praesentium recusandae consequuntur magni nihil
+            doloribus ratione iusto molestiae reiciendis.
+          </p>
+          <img src="images/avatar-3.jpg" alt="testimonial" class="image" />
+          <h3>Jane Doe</h3>
+          <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+        </div>
+        <!-- item 3 -->
+        <div class="box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+            consectetur praesentium recusandae consequuntur magni nihil
+            doloribus ratione iusto molestiae reiciendis.
+          </p>
+          <img src="images/avatar-3.jpg" alt="testimonial" class="image" />
+          <h3>Jane Doe</h3>
+          <div class="rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of testimonials section -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="socials">
+        <a
+          href="https://twitter.com/?lang=en"
+          target="_blank"
+          class="bi bi-twitter"
+        ></a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="bi bi-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          class="bi bi-linkedin"
+        ></a>
+        <a
+          href="mailto:gauta.ncholo@gmail.com"
+          target="_blank"
+          class="bi bi-envelope-fill"
+        ></a>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio esse
+        soluta placeat ab blanditiis!
+      </p>
+
+      <div class="copyright">SHOP|XYZ &copy; | all rights reserved</div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- external script main.js for the cart counter -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#moveAround").on("click", function () {
+          let box = $("#subHeading");
+          let box2 = $("#mainHeading");
+          box.animate({
+            left: 500,
+          });
+          box.animate({
+            top: 300,
+          });
+          box.animate({
+            left: 0,
+            top: 500,
+          });
+          box.animate({
+            left: 0,
+            top: 0,
+          });
+          box.animate({
+            left: 500,
+          });
+          box.animate({
+            top: 500,
+          });
+          box.animate({
+            left: 0,
+            top: 500,
+          });
+          box.animate({
+            left: 0,
+            top: 0,
+          });
+          box2.animate({
+            right: 500,
+          });
+          box2.animate({
+            top: 0,
+          });
+          box2.animate({
+            right: 0,
+            top: 0,
+          });
+          box2.animate({
+            left: 0,
+            top: 0,
+          });
+          box2.animate({
+            right: 0,
+          });
+          box2.animate({
+            top: 300,
+          });
+          box2.animate({
+            right: 0,
+            top: 500,
+          });
+          box2.animate({
+            left: 0,
+            top: 0,
+          });
+        });
+
+        $(".drop").click(function (e) {
+          e.preventDefault();
+          if ($(this).next(".dropdown").is(":hidden")) {
+            $(".dropdown").slideUp();
+            $(this).next(".dropdown").slideDown();
+          } else {
+            $(".dropdown").slideUp();
+          }
+        });
+        $(".drop").focusout(function () {
+          $(".dropdown").slideUp();
+        });
+      });
+    </script>
+  </body>
+</html>

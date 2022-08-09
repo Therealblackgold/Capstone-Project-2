@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SHOP|XYZ Checkout Page</title>
+    <!-- bootstrap icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- bootstrap styles cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- my custom css file -->
+    <link rel="stylesheet" href="css/customBootstrap.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- cataloguePage.html, productPage.html are styled using bootstrap classes
+    including a bootstrap navbar different from the other pages -->
+  <style>
+    form {
+      width: 60% !important;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+      <div class="container">
+        <a
+          href="homepage.html"
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+        >
+          <span class="logo text-uppercase fw-bold ms-2">shop|xyz</span>
+        </a>
+        <!-- nav icons -->
+        <div class="order-lg-2 nav-btns">
+          <a href="cart.html" type="button" class="btn">
+            <i class="bi bi-cart-check-fill"></i>
+            <span class="translate-middle badge bg-primary mx-2" id="cartAmount"
+              >0</span
+            >
+          </a>
+          <button type="button" class="btn">
+            <i class="bi bi-heart-fill"></i>
+            <span class="translate-middle badge bg-primary mx-2">0</span>
+          </button>
+          <button type="button" class="btn">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <!-- nav toggle -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- nav menu -->
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item p-2">
+              <a href="homepage.html" class="nav-link text-uppercase text-dark"
+                >home</a
+              >
+            </li>
+            <li class="nav-item p-2">
+              <a href="catalogue.html" class="nav-link text-uppercase text-dark"
+                >catalogue</a
+              >
+            </li>
+            <li class="nav-item p-2">
+              <a href="aboutPage.html" class="nav-link text-uppercase text-dark"
+                >about us</a
+              >
+            </li>
+            <li class="nav-item p-2">
+              <a href="teamPage.html" class="nav-link text-uppercase text-dark"
+                >team</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- product details section -->
+    <section class="shipping" style="margin-top: 8rem">
+      <!-- Main content container begins -->
+      <div class="container">
+        <!-- Shipping details form div. Form styled with Bootstrap -->
+        <div class="row justify-content-center">
+          <form
+            id="shipping"
+            class="border border-secondary shadow p-5 bg-white"
+          >
+            <div class="row">
+              <p><b>Please fill in your information:</b></p>
+            </div>
+            <div class="row">
+              <div class="form-group col p-0">
+                <label for="fName">Your name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fName"
+                  placeholder="Enter First Name"
+                  required
+                />
+              </div>
+              <div class="form-group col">
+                <label for="lName">Your last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lName"
+                  placeholder="Enter Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email">Your email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailPromise"
+                placeholder="Enter email address"
+                required
+              />
+              <small id="emailPromise" class="form-text text-muted"
+                >We'll never share your email address with anyone else.
+              </small>
+            </div>
+            <div class="form-group row">
+              <label for="delivery">Collection or delivery:</label>
+              <select class="form-control" id="delivery">
+                <option value="100">Deliver my order</option>
+                <option value="0">Collect</option>
+              </select>
+              <small id="costOfOptions" class="form-text text-muted"
+                >Delivery (R100), Collection (free)</small
+              >
+            </div>
+
+            <div class="row">
+              <label class="form-check-label">Choose your location:</label>
+            </div>
+            <div class="form-group row">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="province"
+                  id="inline-radio3"
+                  value="Johannesburg"
+                />
+                <label class="form-check-label" for="inline-radio3"
+                  >Johannesburg</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="location-radio"
+                  id="inline-radio2"
+                  value="CapeTown"
+                />
+                <label class="form-check-label" for="inline-radio2"
+                  >Cape Town</label
+                >
+              </div>
+
+              <div
+                id="location-radio-section"
+                class="form-check form-check-inline"
+              >
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="location-radio"
+                  id="inline-radio1"
+                  value="Durban"
+                />
+                <label class="form-check-label" for="inline-radio1"
+                  >Durban</label
+                >
+              </div>
+            </div>
+
+            <div class="row">
+              <label class="form-check-label"
+                >Use discount coupon/s to SAVE?:</label
+              >
+            </div>
+
+            <div class="form-group">
+              <div class="form-check form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="coupon"
+                  id="coupon-radio1"
+                  value="0"
+                />
+                <label class="form-check-label" for="coupon-radio1"
+                  >No coupon</label
+                >
+              </div>
+              <div class="form-check form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="coupon-radio"
+                  id="coupon-radio2"
+                  value="50"
+                />
+                <label class="form-check-label" for="coupon-radio2"
+                  >Coupon code 1 - R50</label
+                >
+              </div>
+              <div class="form-check form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="coupon-radio"
+                  id="coupon-radio3"
+                  value="100"
+                />
+                <label class="form-check-label" for="coupon-radio3"
+                  >Coupon code 2 - R100</label
+                >
+              </div>
+              <div class="form-check form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="coupon-radio"
+                  id="coupon-radio4"
+                  value="150"
+                />
+                <label class="form-check-label" for="coupon-radio4"
+                  >Coupon code 3 coupon - R150</label
+                >
+              </div>
+              <div class="form-check form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="coupon-radio"
+                  id="coupon-radio5"
+                  value="25"
+                />
+                <label class="form-check-label" for="coupon-radio5"
+                  >Coupon code 4 coupon - R25</label
+                >
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <!-- This button calls "addDeliveryInfo()" function to add the cost of delivery and subtract coupon amounts from the current subtotal, to calculate final total. This total is then used in the shopping cart summary section. -->
+              <button
+                type="reset"
+                class="btn btn-primary mx-auto"
+                id="submitBtn"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+
+          <!-- Shipping details form div ends here -->
+        </div>
+
+        <!-- Main container ends-->
+      </div>
+    </section>
+    <!-- end product details section -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- external script file checkout.js -->
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

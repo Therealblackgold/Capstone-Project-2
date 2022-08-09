@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SHOP|XYZ Product Details Page</title>
+    <!-- bootstrap icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- bootstrap styles cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- my custom css file -->
+    <link rel="stylesheet" href="css/customBootstrap.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <!-- cataloguePage.html, productPage.html are styled using bootstrap classes
+    including a bootstrap navbar different from the other pages -->
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+      <div class="container">
+        <a
+          href="homepage.html"
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+        >
+          <span class="logo text-uppercase fw-bold ms-2">shop|xyz</span>
+        </a>
+        <!-- nav icons -->
+        <div class="order-lg-2 nav-btns">
+          <a href="cart.html" type="button" class="btn">
+            <i class="bi bi-cart-check-fill"></i>
+            <span class="translate-middle badge bg-primary mx-2" id="cartAmount"
+              >0</span
+            >
+          </a>
+          <button type="button" class="btn">
+            <i class="bi bi-heart-fill"></i>
+            <span class="translate-middle badge bg-primary mx-2">0</span>
+          </button>
+          <button type="button" class="btn">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <!-- nav toggle -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- nav menu -->
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item p-2">
+              <a href="homepage.html" class="nav-link text-uppercase text-dark"
+                >home</a
+              >
+            </li>
+            <li class="nav-item p-2">
+              <a href="catalogue.html" class="nav-link text-uppercase text-dark"
+                >catalogue</a
+              >
+            </li>
+            <li class="nav-item p-2">
+              <a href="aboutPage.html" class="nav-link text-uppercase text-dark"
+                >about us</a
+              >
+            </li>
+            <li class="nav-item p-2">
+              <a href="teamPage.html" class="nav-link text-uppercase text-dark"
+                >team</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- cart totals -->
+    <section class="cart mt-top-5">
+      <div class="text-center" id="label"></div>
+      <div class="text-center" id="vatLabel"></div>
+    </section>
+
+    <!-- product details section -->
+    <section class="product"></section>
+    <!-- end product details section -->
+
+    <!-- had to add the script below due to a bag in my code that mutates my original product array cart.js -->
+    <script src="js/Data.js"></script>
+    <!-- external script productPage.js -->
+    <script type="text/javascript" src="js/productPage.js"></script>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".container").click(function () {
+          $(this).hide(1000);
+        });
+      });
+    </script>
+  </body>
+</html>
